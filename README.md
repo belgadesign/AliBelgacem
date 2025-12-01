@@ -52,11 +52,11 @@ I develop intelligent, robust, and scalable applications using **Delphi** and **
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=belgadesign&show_icons=true&theme=default)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AliBelgacem&show_icons=true&theme=default)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=belgadesign&layout=compact)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AliBelgacem&layout=compact)
 
-![Profile Views](https://komarev.com/ghpvc/?username=belgadesign)
+![Profile Views](https://komarev.com/ghpvc/?username=AliBelgacem)
 
 ---
 
