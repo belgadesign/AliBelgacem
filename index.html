@@ -207,14 +207,99 @@ blockquote {
 
 <section id="github">
     <h2>📊 GitHub Stats</h2>
-    <div class="stats">
-        <img src="https://github-stats-alpha.vercel.app/api?username=alibelgacem&cc=000&tc=fff&ic=fff&bc=000" alt="GitHub Stats">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=alibelgacem&theme=github" alt="Most Commit Language">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=alibelgacem&theme=github" alt="Repos per Language">
-        <img src="https://img.shields.io/github/followers/alibelgacem?label=Followers&style=for-the-badge" alt="Followers">
-        <img src="https://komarev.com/ghpvc/?username=alibelgacem" alt="Profile Views">
+    
+    <div class="github-container">
+        <!-- Main Stats -->
+        <div class="stats-main">
+            <img src="https://github-stats-alpha.vercel.app/api?username=alibelgacem&cc=000&tc=fff&ic=fff&bc=000" alt="GitHub Stats">
+        </div>
+        
+        <!-- Top Languages Side by Side -->
+        <div class="stats-languages">
+            <div class="lang-card">
+                <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=alibelgacem&theme=github" alt="Most Commit Language">
+                <p class="lang-label">Languages by Commit</p>
+            </div>
+            <div class="lang-card">
+                <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=alibelgacem&theme=github" alt="Repos per Language">
+                <p class="lang-label">Languages by Repo</p>
+            </div>
+        </div>
+        
+        <!-- Followers & Views -->
+        <div class="stats-badges">
+            <img src="https://img.shields.io/github/followers/alibelgacem?label=Followers&style=for-the-badge&color=blue" alt="Followers">
+            <img src="https://komarev.com/ghpvc/?username=alibelgacem&color=green&label=Profile+Views" alt="Profile Views">
+        </div>
     </div>
 </section>
+
+<style>
+.github-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.stats-main img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.stats-languages {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.lang-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.lang-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lang-label {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.stats-badges {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stats-badges img {
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .stats-languages {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lang-card {
+        max-width: 100%;
+    }
+}
+</style>
 
 <section id="contact">
     <h2>📫 Contact</h2>
