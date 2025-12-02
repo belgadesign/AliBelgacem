@@ -61,7 +61,7 @@ I develop intelligent, robust, and scalable applications using **Delphi** and **
 
 ![Followers](https://img.shields.io/github/followers/alibelgacem?label=Followers&style=for-the-badge&color=blue)
 
-![Profile Views](https://komarev.com/ghpvc/?username=alibelgacem&color=FF0000&label=Profile+Views&style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=alibelgacem&color=006400&label=Profile+Views&style=for-the-badge)
 
 ---
 
