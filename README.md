@@ -53,7 +53,7 @@ I develop intelligent, robust, and scalable applications using **Delphi** and **
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alibelgacem)
+![GitHub Stats](https://github-stats-alpha.vercel.app/api?username=alibelgacem&cc=000&tc=fff&ic=fff&bc=000)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alibelgacem&layout=compact)
 
