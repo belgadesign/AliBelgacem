@@ -144,6 +144,89 @@ blockquote {
     nav ul { flex-direction: column; }
     nav ul li { margin: 5px 0; }
 }
+.github-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+/* Main stats wrapper - width = (2 * lang-card width) + gap */
+.stats-main-wrapper {
+    width: 820px; /* 400px + 20px + 400px */
+    max-width: 100%;
+    text-align: center;
+}
+
+.stats-main {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Language cards container */
+.stats-languages {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 820px; /* SAME AS stats-main-wrapper */
+    max-width: 100%;
+}
+
+/* Each language card - half of main stats width minus half the gap */
+.lang-card {
+    width: 400px; /* (820px - 20px) / 2 = 400px */
+    max-width: calc(50% - 10px); /* Accounts for the gap */
+    text-align: center;
+}
+
+.lang-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.stats-badges {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stats-badges img {
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive: When screen is too small, stack everything */
+@media (max-width: 850px) {
+    .stats-main-wrapper,
+    .stats-languages {
+        width: 400px;
+    }
+    
+    .lang-card {
+        width: 400px;
+        max-width: 100%;
+    }
+    
+    .stats-languages {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .stats-main-wrapper,
+    .stats-languages,
+    .lang-card {
+        width: 100%;
+    }
+}
 </style>
 </head>
 <body>
@@ -218,11 +301,9 @@ blockquote {
         <div class="stats-languages">
             <div class="lang-card">
                 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=alibelgacem&theme=github" alt="Most Commit Language">
-                <p class="lang-label">Languages by Commit</p>
             </div>
             <div class="lang-card">
                 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=alibelgacem&theme=github" alt="Repos per Language">
-                <p class="lang-label">Languages by Repo</p>
             </div>
         </div>
         
@@ -233,98 +314,6 @@ blockquote {
         </div>
     </div>
 </section>
-
-<style>
-.github-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    width: 100%;
-}
-
-/* Main stats wrapper - width = (2 * lang-card width) + gap */
-.stats-main-wrapper {
-    width: 820px; /* 400px + 20px + 400px */
-    max-width: 100%;
-    text-align: center;
-}
-
-.stats-main {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Language cards container */
-.stats-languages {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 820px; /* SAME AS stats-main-wrapper */
-    max-width: 100%;
-}
-
-/* Each language card - half of main stats width minus half the gap */
-.lang-card {
-    width: 400px; /* (820px - 20px) / 2 = 400px */
-    max-width: calc(50% - 10px); /* Accounts for the gap */
-    text-align: center;
-}
-
-.lang-card img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.lang-label {
-    margin-top: 5px;
-    font-weight: bold;
-    color: #4CAF50;
-}
-
-.stats-badges {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.stats-badges img {
-    height: 35px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Responsive: When screen is too small, stack everything */
-@media (max-width: 850px) {
-    .stats-main-wrapper,
-    .stats-languages {
-        width: 400px;
-    }
-    
-    .lang-card {
-        width: 400px;
-        max-width: 100%;
-    }
-    
-    .stats-languages {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 450px) {
-    .stats-main-wrapper,
-    .stats-languages,
-    .lang-card {
-        width: 100%;
-    }
-}
-</style>
 
 <section id="contact">
     <h2>📫 Contact</h2>
